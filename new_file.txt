@@ -1,2 +1,2 @@
-Hello this is a new file
+Hello [insertion] this is a new file
 These are some changes
