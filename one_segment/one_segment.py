@@ -19,12 +19,20 @@ Example:
 """
 
 def main(input_filename, output_filename):
+    # load audio file
     audiofile = audio.LocalAudioFile(input_filename)
+    # get the beats (Audio Quanta)
     beats = audiofile.analysis.beats
+    # create a new empty list of Audio Quanta
     collect = audio.AudioQuantumList()
+    # add the first segment in each beat in sequence
     for beat in beats:
+        # beat.children are the segments in this beat
+        # beat.children()[0] is the first segment
         collect.append(beat.children()[0])
+    # Get the raw audio data for the audio quanta and store them in 'out'
     out = audio.getpieces(audiofile, collect)
+    # encode the raw audio as the appropriate file type (using en-ffmpeg)
     out.encode(output_filename)
 
 if __name__ == '__main__':
