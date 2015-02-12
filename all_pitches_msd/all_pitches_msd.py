@@ -1,4 +1,11 @@
-# concatenates all the pitches from all the segments in all the HDF5 songs from the Million Song Dataset
+"""
+Based on the show_attrs.py file by ddesroches: 
+https://github.com/echonest/pyechonest/blob/master/examples/show_attrs.py
+
+Recursively concatenates pitches from hdf5 files in the MSD directory structure.
+
+by Mitch Parry 2015-02-12
+"""
 
 import sys
 import os
