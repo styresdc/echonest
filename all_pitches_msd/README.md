@@ -1,5 +1,5 @@
 # Problem
-We want to analyze the [million song dataset].
+We want to analyze the pitches in all the segments in the [million song dataset].
 
 # Question
 1. What information does the [million song dataset] provide?
