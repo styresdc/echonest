@@ -27,6 +27,11 @@ This resource answers question 2: how to get the timbre for one song.
 ### 3. Mini-abstract and relevance of [Pyechonest Show Attrs Example]
 This code prints some attributes from every song in a directory.  Specifically, I am reusing the `show_attrs` method to recursively analyze every song in the MSD.  The [all_pitches_msd.py] demonstrates how to recursively concatenate the pitches of hdf5 files in the MSD directory structure.
 
+For example:
+```bash
+$ python all_pitches_msd.py /u/classes/3535/modules/MillionSongSubset/data/
+```
+
 
 [Million Song Dataset]: http://labrosa.ee.columbia.edu/millionsong/
 [Million Song Dataset Code]: http://labrosa.ee.columbia.edu/millionsong/pages/code
