@@ -4,6 +4,10 @@ https://github.com/echonest/pyechonest/blob/master/examples/show_attrs.py
 
 Recursively concatenates pitches from hdf5 files in the MSD directory structure.
 
+For example:
+
+$ python all_pitches_msd.py /u/classes/3535/modules/MillionSongSubset/data/
+
 by Mitch Parry 2015-02-12
 """
 
